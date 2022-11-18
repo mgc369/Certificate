@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    body {
+        /*width: 1410px;
+        height: 583px;*/
+        margin: 0;
+        padding: 0;
+    }
+    .borderone {
+        transform: rotate(90deg);
+    }
+    .userdata {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.userdata {
+    line-height: 45px;
+    margin-top: -500px;
+    margin-left: 1500px;
+    position: absolute;
+    width: 300px;
+    background: rgb(102, 166, 100);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input {
+    text-align: center;
+    font-size: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+input:hover {
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+#resu {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 60%;
+    user-select: none;
+    transition: all 0.2s;
+}
+
+#subm {
+    width: 100px;
+    user-select: none;
+    font-size: 60%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#subm:hover, #resu:hover {
+    background: green;
+    transition: all 0.5s;
+}
+
+img {
+    width: 908px;
+    height: 613px;
+    /*margin-top: -1070px;
+    margin-left: -450px;*/
+    margin-left: -115px;
+    margin-top: -355px;
+    user-select: none;
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(53, 47, 47);
+}
+
+.borderone {
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 1000px 700px;
+    padding: 60px;
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    padding-left: -300px;
+    /*border: rgb(112, 59, 24) 65px solid;*/
+}
+
+.bordertwo {
+    font-size: 85%;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-left: -160px;
+    z-index: 2;
+}
+
+#docgrade {
+    font-size: 80%;
+}
+
+#docdate {
+    line-height: normal;
+    margin-top: 60px;
+}
+
+#date {
+    font-size: 70%;
+}
